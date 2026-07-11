@@ -81,9 +81,32 @@ src: url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAABHQAA0AAAA
 .s2{font-size:15px;font-family:Lohit-Devanagari_q;color:#000;}
 .s3{font-size:15px;font-family:DejaVuSerif-Bold_s;color:#000;}
 .s4{font-size:13px;font-family:DejaVuSerif_u;color:#000;}
+	#tools{
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:999999;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+#tools button{
+    width:110px;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    background:#0066ff;
+    color:#fff;
+    font-size:14px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#tools button:hover{
+    background:#004dcc;
+}
 </style>
-<script id="metadata" type="application/json">{"pagecount":1,"title":"","author":"","subject":"","keywords":"","creator":"ABBYY FineReader PDF","producer":"ABBYY FineReader PDF","creationdate":"D:20260226181239+05'30'","moddate":"D:20260709074535+05'30'","trapped":"","fileName":"sample.pdf","bounds":[[909,1286]],"bookmarks":[],"thumbnailType":"","pageType":"html","pageLabels":[]}</script>
-<script id="annotations" type="application/json">{"pages":[]}</script>
 <script>window.addEventListener('DOMContentLoaded',function(){</script>
 
 </head>
@@ -204,6 +227,31 @@ src: url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAABHQAA0AAAA
         pageAnnotations.annotations.forEach(annotation => createAnnotation(annotationsContainer, annotation, pageNo));
         pages[pageNo - 1].appendChild(annotationsContainer);
     });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+	<div id="tools">
+    <button onclick="downloadPDF()">⬇ Download</button>
+    <button onclick="window.print()">💾 Save</button>
+    <button onclick="location.reload()">🔄 Reset</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script>
+function downloadPDF(){
+
+    const serial = document.querySelector(".text-container .s0").innerText.trim();
+    const element = document.querySelector(".page");
+
+    html2pdf().set({
+        margin: 0,
+        filename: "BIRTHCERT_" + serial + ".pdf",
+        image: { type: "jpeg", quality: 1 },
+        html2canvas: { scale: 3, useCORS: true },
+        jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
+    }).from(element).save();
+
+}
 </script>
 </body>
 </html>
