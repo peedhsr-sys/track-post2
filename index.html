@@ -849,6 +849,7 @@ pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({});
 <div id="pf1" class="pf w0 h0" data-page-no="1">
   <div class="pc pc1 w0 h0">
     <img class="bi x0 y0 w1 h1" alt="" src="background.png"/>
+    
     <div class="c x1 y1 w2 h2">
       <div class="t m0 x2 h3 y2 ff1 fs0 fc0 sc0 ls0 ws0">0123-1509130425</div>
     </div>
@@ -862,9 +863,19 @@ pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({});
     </div>
     
     <div class="c x1 y1 w2 h2">
-      <div class="t m0 x3 h6 y9 ff3 fs1 fc0 sc0 ls0 ws0">नाम <span class="ff2">/ Name<span class="_ _8"> </span>AMAAN ANSARI</span></div>
-      <div class="t m0 x3 h6 ya ff3 fs1 fc0 sc0 ls0 ws0">लिंग <span class="ff2">/ Gender<span class="_ _9"> </span>MALE</span></div>
-      <div class="t m0 x3 h6 yb ff3 fs1 fc0 sc0 ls0 ws0">जन्म की तिथि <span class="ff2">/ Date of Birth<span class="_ _a"> </span>24/06/2021</span></div>
+      <!-- Row 1: Name -->
+      <div class="t m0 x3 h6 y9 ff3 fs1 fc0 sc0 ls0 ws0">नाम <span class="ff2">/ Name</span></div>
+      <div class="t m0 x5 h6 y9 ff2 fs1 fc0 sc0 ls0 ws0">AMAAN ANSARI</div>
+      
+      <!-- Row 2: Gender -->
+      <div class="t m0 x3 h6 ya ff3 fs1 fc0 sc0 ls0 ws0">लिंग <span class="ff2">/ Gender</span></div>
+      <div class="t m0 x5 h6 ya ff2 fs1 fc0 sc0 ls0 ws0">MALE</div>
+      
+      <!-- Row 3: DOB -->
+      <div class="t m0 x3 h6 yb ff3 fs1 fc0 sc0 ls0 ws0">जन्म की तिथि <span class="ff2">/ Date of Birth</span></div>
+      <div class="t m0 x5 h6 yb ff2 fs1 fc0 sc0 ls0 ws0">24/06/2021</div>
+      
+      <!-- Row 4: Place of Birth -->
       <div class="t m0 x3 h6 yc ff3 fs1 fc0 sc0 ls0 ws0">जन्म का स्थान <span class="ff2">/ Place of Birth</span></div>
     </div>
     
@@ -875,16 +886,36 @@ pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({});
     </div>
     
     <div class="c x1 y1 w2 h2">
-      <div class="t m0 x3 h6 y11 ff3 fs1 fc0 sc0 ls0 ws0">पंजीकरण की तिथि <span class="ff2">/ Date of Registration<span class="_ _b"> </span>14/07/2021</span></div>
-      <div class="t m0 x3 h6 y13 ff3 fs1 fc0 sc0 ls0 ws0">पंजीकरण संख्या <span class="ff2">/ Registration No<span class="_ _c"> </span>MCDOLIR-0121-279439-E</span></div>
-      <div class="t m0 x3 h6 y16 ff3 fs1 fc0 sc0 ls0 ws0">माता का नाम <span class="ff2">/ Name of Mother<span class="_ _d"> </span>KANCHAN</span></div>
-      <div class="t m0 x3 h6 y17 ff3 fs1 fc0 sc0 ls0 ws0">पिता का नाम <span class="ff2">/ Name of Father<span class="_ _e"> </span>WAHID</span></div>
+      <!-- Row 5: Date of Registration -->
+      <div class="t m0 x3 h6 y11 ff3 fs1 fc0 sc0 ls0 ws0">पंजीकरण की तिथि <span class="ff2">/ Date of Registration</span></div>
+      <div class="t m0 x5 h6 y11 ff2 fs1 fc0 sc0 ls0 ws0">14/07/2021</div>
+      
+      <!-- Row 6: Registration No -->
+      <div class="t m0 x3 h6 y13 ff3 fs1 fc0 sc0 ls0 ws0">पंजीकरण संख्या <span class="ff2">/ Registration No</span></div>
+      <div class="t m0 x5 h6 y13 ff2 fs1 fc0 sc0 ls0 ws0">MCDOLIR-0121-279439-E</div>
+      
+      <!-- Row 7: Mother's Name -->
+      <div class="t m0 x3 h6 y16 ff3 fs1 fc0 sc0 ls0 ws0">माता का नाम <span class="ff2">/ Name of Mother</span></div>
+      <div class="t m0 x5 h6 y16 ff2 fs1 fc0 sc0 ls0 ws0">KANCHAN</div>
+      
+      <!-- Row 8: Father's Name -->
+      <div class="t m0 x3 h6 y17 ff3 fs1 fc0 sc0 ls0 ws0">पिता का नाम <span class="ff2">/ Name of Father</span></div>
+      <div class="t m0 x5 h6 y17 ff2 fs1 fc0 sc0 ls0 ws0">WAHID</div>
+      
+      <!-- Row 9: Present Address -->
       <div class="t m0 x3 h6 y18 ff3 fs1 fc0 sc0 ls0 ws0">वर्तमान/जन्म के समय पता</div>
       <div class="t m0 x3 h5 y19 ff2 fs1 fc0 sc0 ls0 ws0">Present/Address at the time of Birth</div>
       <div class="t m0 x8 h5 y18 ff2 fs1 fc0 sc0 ls0 ws0">A -288, OLD SEEMA PURI DELHI EAST DELHI INDIA 110095</div>
-      <div class="t m0 x3 h6 y1a ff3 fs1 fc0 sc0 ls0 ws0">स्थाई पता <span class="ff2">/ Permanent Address<span class="_ _11"> </span>A -288, OLD SEEMA PURI DELHI EAST DELHI INDIA 110095</span></div>
-      <div class="t m0 x3 h6 y1b ff3 fs1 fc0 sc0 ls0 ws0">जारी करने की तिथि <span class="ff2">/ Date of Issue<span class="_ _12"> </span>15/09/2023</span></div>
       
+      <!-- Row 10: Permanent Address -->
+      <div class="t m0 x3 h6 y1a ff3 fs1 fc0 sc0 ls0 ws0">स्थाई पता <span class="ff2">/ Permanent Address</span></div>
+      <div class="t m0 x8 h6 y1a ff2 fs1 fc0 sc0 ls0 ws0">A -288, OLD SEEMA PURI DELHI EAST DELHI INDIA 110095</div>
+      
+      <!-- Row 11: Date of Issue -->
+      <div class="t m0 x3 h6 y1b ff3 fs1 fc0 sc0 ls0 ws0">जारी करने की तिथि <span class="ff2">/ Date of Issue</span></div>
+      <div class="t m0 x5 h6 y1b ff2 fs1 fc0 sc0 ls0 ws0">15/09/2023</div>
+      
+      <!-- Footer & Disclaimer -->
       <div class="t m0 x9 h8 y1c ff1 fs2 fc0 sc0 ls0 ws0">Disclaimer: </div>
       <div class="t m0 xa h9 y1d ff2 fs3 fc0 sc0 ls0 ws0">This is system generated certificate/license. In case of any discrepancy, please contact the department.</div>
       <div class="t m0 xb h8 y1e ff2 fs2 fc0 sc0 ls0 ws0">Note: This certificate is system generated and does not require any seal/signature in original. The</div>
@@ -894,8 +925,11 @@ pdf2htmlEX.defaultViewer = new pdf2htmlEX.Viewer({});
       <div class="t m0 x10 h8 y24 ff2 fs2 fc0 sc0 ls0 ws0">ENSURE REGISTRATION OF EVERY BIRTH &amp; DEATH</div>
     </div>
   </div>
-  <div class="pi" data-data='</div><div class="loading-indicator">
-<img alt="" src="background.png"/>
+  <div class="pi" data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'></div>
+</div>
+</div>
+<div class="loading-indicator">
+<img alt="" src="data:image/png;base64,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"/>
 </div>
 </body>
 </html>
